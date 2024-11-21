@@ -1,0 +1,234 @@
+/* Page Container */
+*{
+  padding: 0%;
+  margin: 0%;
+
+}
+.page-containerculture {
+    font-family: 'Poppins';
+  }
+  
+  /* Hero Section */
+  .hero-sectionculture {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #fff;
+    color: #0442c3;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  
+  .hero-titleculture {
+    font-size: 45px !important;
+    align-items: left;
+    padding-left: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: #042e88;
+    font-family:'Poppins' ;
+  }
+  
+  .video-containerculture {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* لضمان عدم تجاوز الفيديو للحدود */
+}
+
+.hero-videoculture {
+    width: 100vw; /* يجعل الفيديو بعرض الشاشة بالكامل */
+    height: 720px; /* يحدد ارتفاع الفيديو إلى 520 بكسل */
+    object-fit: cover; /* لضمان عدم تمدد الفيديو أو انكماشه */
+}
+
+  
+  
+.my-icon-white {
+  font-family: var(--site-font-family);
+  font-weight: 300;
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 58px;
+  height: 58px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: 300px; /* يوضع في أعلى الفيديو */
+  right: 70px; /* يوضع على يمين الفيديو */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.s1t5290 path {
+  fill: var(--main-color);
+}
+
+.accessibility-hidden-text {
+  display: none;
+}
+  
+  /* .video-titleculture {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  } */
+
+  .Discoverwaem{
+    font-family: 'Poppins';
+    text-align: left;
+    padding-left:6rem ;
+    color: #000000;
+    padding-top: 10px;
+  }
+  
+  
+  /* Scroll Link Section */
+  :root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+    --site-color: #035E88;
+    --site-color-2: #004565;
+    --main-color: #035E88;
+    --main-color-text: #fff;
+    --main-color--active-2: #006699;
+    --main-color--active: #004565;
+    --greyscale: #505050;
+    --site-font-family: 'Dubai', 'Arial', sans-serif;
+}
+
+.droplist {
+    line-height: 1.5;
+    text-align: left;
+    font-family: var(--site-font-family);
+    font-weight: 300;
+    color: #000;
+    margin: 0;
+padding-left: 4rem;  
+  list-style-type: none;
+    font-size: 1.125rem;
+}
+
+.droplist__li {
+    display: block;
+}
+
+.droplist__a {
+    text-decoration: none;
+    color: #050505;
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+gap: 20px;
+font-family: 'Poppins';
+
+}
+
+.droplist__a:hover {
+    color: #0442c3;
+}
+
+.icon {
+    margin-right: 8px;
+    color:#035e88;
+}
+
+.jump{
+  font-family: 'Poppins';
+  text-align: left;
+  padding-left:4rem ;
+  color: #000000;
+  font-size: 24px;
+  padding-top: 2rem;
+}
+
+  /* Typical Iraqi clothing Section */
+.clothiraq{
+  padding-left: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-family: 'Poppins';
+  color: #0442c3;
+}
+
+.abaya{
+  padding-left: 4rem;
+  line-height: 1.5;
+  word-spacing: 0.5px;
+  font-size: 20px;
+  font-family: Arial;
+  padding-bottom: 1rem;
+  text-align: justify;
+  padding-right: 25rem;
+  color: #000000;
+
+}
+  /* Services Section */
+  .services-sectionculture {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  /* Contact Section */
+  .contact-sectionculture {
+    padding: 4rem 1rem;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .carousel-containerculture {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-formculture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-formculture .inculture,
+  .contact-formculture .teculture {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-formculture .teculture {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-formculture .btnculture {
+    background-color: #0442c3;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-formculture btnculture:hover {
+    background-color: #042e88;
+  }

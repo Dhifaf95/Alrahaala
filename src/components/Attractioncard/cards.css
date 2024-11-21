@@ -1,0 +1,61 @@
+
+  .card-container {
+    width:100%; /* عرض كامل */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center; /* تمركز الكروت */
+    flex-wrap: wrap; /* تفعيل التفاف الكروت */
+    margin: 0; /* تأكد من عدم وجود هوامش */
+    padding: 0; /* تأكد من عدم وجود حشوات */
+    height: auto;
+    gap: 30px;
+}
+
+
+.cardqq {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden; /* لإظهار الزوايا المستديرة على جميع الجوانب */
+  width: 400px;
+  margin: 10px;
+  transition: transform 0.2s;
+  height: 556px;
+  margin-top: 30px;
+  padding: 20px;
+}
+  
+  
+  .cardqq:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .card__image {
+    width: 170px; /* Make image responsive */
+    height:170px; /* Maintain aspect ratio */
+    
+    border-radius:10px;
+    object-fit: cover; 
+  }
+  
+ 
+  .card__title {
+    font-size: 1.5rem; /* Increased font size for title */
+    font-weight: bold;
+    margin: 0 0 10px; /* Space between title and description */
+    color: #0442c3; /* Dark color for contrast */
+  }
+  
+  .card__description {
+    font-size: 24;
+    color: #000000; /* Lighter color for description */
+    line-height: 1.5; /* Improved readability */
+text-align: justify;  }
+  
+.buttonwhy{
+  margin-top: 10px;
+  font-family: 'Poppins';
+  border-radius: 10px;
+
+}
+  

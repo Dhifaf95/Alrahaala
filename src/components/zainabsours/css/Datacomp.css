@@ -1,0 +1,130 @@
+.socalcard{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(13, 88, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+  
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(65, 29, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 30px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #000000;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+.Datacomp{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+ }
+.compnname{
+    width: 40rem;
+    grid-area: header;
+    font-size: larger;
+    
+ }
+
+
+.contaner{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "header header"
+      "sidebar content";
+    
+    
+}
+.map{
+    width: 15rem;
+    grid-area: sidebar;
+    padding-left: 10px;
+
+}
+
+.socal{
+    grid-area: content;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 100px;
+}
+
+.compimg{
+ display: flex;
+ justify-content: end;
+ align-items: start;
+ 
+}
+
+.p{
+  padding-top: 20px;
+  padding-bottom: 10px;
+color: black;
+}

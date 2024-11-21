@@ -1,0 +1,31 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .descripesite-container {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    opacity: 0; /* Initial opacity for fade-in effect */
+    animation: fadeIn 1s forwards; /* Apply animation */
+  }
+  
+  .descripesite-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  .descripesite-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 16px; /* Space between paragraphs */
+  }
+  

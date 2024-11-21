@@ -1,0 +1,283 @@
+// _variables.scss
+$primary-color: #3b82f6;
+$secondary-color: #8b5cf6;
+$text-primary: #1f2937;
+$text-secondary: #4b5563;
+$background-light: #f9fafb;
+$white: #ffffff;
+$transition-speed: 0.3s;
+$border-radius: 1rem;
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+// _mixins.scss
+@mixin gradient-text {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin card-hover {
+  transition: transform $transition-speed, box-shadow $transition-speed;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+@mixin gradient-bg {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+// styles.scss
+.about-section {
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom, $background-light, $white);
+  min-height: 100vh;
+
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    &__title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      @include gradient-text;
+
+      @media (min-width: 768px) {
+        font-size: 3.5rem;
+      }
+    }
+
+    &__subtitle {
+      color: $text-secondary;
+      font-size: 1.125rem;
+      max-width: 36rem;
+      margin: 0 auto;
+    }
+  }
+
+  .mission-card {
+    background: $white;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $shadow-md;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+    @include card-hover;
+
+    &__header {
+      padding: 1.5rem 2rem;
+      background: linear-gradient(to right, rgba($primary-color, 0.1), rgba($secondary-color, 0.1));
+
+      h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: $text-primary;
+      }
+    }
+
+    &__content {
+      padding: 2rem;
+
+      p {
+        color: $text-secondary;
+        line-height: 1.7;
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .features-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-card {
+      background: $white;
+      padding: 2rem;
+      border-radius: $border-radius;
+      box-shadow: $shadow-md;
+      @include card-hover;
+
+      &__icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include gradient-bg;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+          color: $white;
+        }
+      }
+
+      &__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: $text-primary;
+      }
+
+      &__description {
+        color: $text-secondary;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .comments-section {
+    background: $white;
+    border-radius: $border-radius;
+    box-shadow: $shadow-md;
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    
+
+
+    &__header {
+      padding: 1.5rem 2rem;
+      background: linear-gradient(to right, rgba($primary-color, 0.1), rgba($secondary-color, 0.1));
+      align-items: center;
+      gap: 0.75rem;
+      flex: 1;
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: $primary-color;
+      }
+
+      h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: $text-primary;
+      }
+    }
+
+    &__content {
+      padding: 2rem;
+      flex: 1;
+    }
+
+    .comment-form {
+      margin-bottom: 3rem;
+
+      .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+          display: block;
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: $text-secondary;
+          margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid rgba($text-secondary, 0.2);
+          border-radius: 0.5rem;
+          transition: all $transition-speed;
+
+          &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        @include gradient-bg;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        transition: opacity $transition-speed;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+
+    .comments-list {
+      width: 100%;
+      .comment {
+
+        padding: 1rem;
+        border-radius: $border-radius;
+        background: $background-light;
+        margin-bottom: 1.5rem;
+        transition: box-shadow $transition-speed;
+
+        &:hover {
+          box-shadow: $shadow-sm;
+        }
+
+        &__header {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 1rem;
+
+          .avatar {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            @include gradient-bg;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            font-weight: 500;
+          }
+
+          .user-info {
+            h4 {
+              font-weight: 600;
+              color: $text-primary;
+              margin-bottom: 0.25rem;
+            }
+
+            .date {
+              font-size: 0.875rem;
+              color: $text-secondary;
+            }
+          }
+        }
+
+        &__text {
+          color: $text-secondary;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

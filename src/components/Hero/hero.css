@@ -1,0 +1,44 @@
+.container-hero {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  background:#fff;
+}
+
+.container-exploremore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* لضمان تساوي الارتفاع بين النص والصورة */
+  margin-bottom: 20px; /* لإضافة مساحة بين الجزء العلوي وشريط البحث */
+}
+
+.containerlink {
+  flex: 1; /* يسمح بتوسيع هذا القسم */
+  padding-right: 20px;
+  text-align: left;
+  ; /* مساحة بين النص والصورة */
+}
+.herodis {
+font-size: 50px ;
+text-align: left;
+color: #2C3562;
+}
+ 
+.button-he{
+  font-size: large !important;
+display: block;
+margin-top: 60px; /* ضبط المسافة بين الزر والنص */
+}
+
+.container-image {
+  flex: 1; /* يسمح بتوسيع هذا القسم */
+  text-align: right;
+  padding-left: 0px;
+}
+
+.container-image img {
+  max-width: 100%; /* لجعل الصورة مرنة */
+  height: auto; /* للحفاظ على نسبة الطول إلى العرض */
+}

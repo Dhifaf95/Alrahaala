@@ -1,0 +1,13 @@
+.date-range-select {
+    margin: 20px 0;
+  }
+  
+  .date-picker {
+    display: flex;
+    align-items: center;
+  }
+  
+  .separator {
+    margin: 0 10px;
+  }
+  

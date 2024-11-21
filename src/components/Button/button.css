@@ -1,0 +1,11 @@
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 4px;
+}
+

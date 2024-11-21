@@ -1,0 +1,101 @@
+/* bookingSearch.css
+#E1C59D
+ #2C3562*/
+
+.booking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background-color: #E1C59D;
+  padding: 3px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  text-align: left;
+}
+
+.input-icon input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color:#455F9E;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.submit-btn:hover {
+  background-color:#E1C59D;
+}
+
+.input-icon-calendar {
+  position: relative;
+  width: 300px;
+background-color: #fff;
+height: 43px;
+border-radius: 10px;
+
+}
+
+.calendar-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa; /* اللون الرمادي */
+  font-size: 24px;
+  pointer-events: none; /* يمنع تفاعل المستخدم مع الأيقونة */
+
+}
+
+
+.p-calendar input {
+  padding-left: 0; /* إزالة المساحة الإضافية من اليسار */
+  text-align: center;
+  border: none;
+  outline: none; /* توسيط النص placeholder */
+}
+
+#Dates{
+  padding: 10px 10px 10px 35px;
+  border: none;
+  outline: none;
+}

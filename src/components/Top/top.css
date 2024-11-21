@@ -1,0 +1,67 @@
+/* Import your fonts here */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
+
+
+
+
+.wrapper11 {
+  position: relative;
+  background: linear-gradient(to bottom, #0442c3 0%, #c1c6d8 100%);
+
+}
+.news__img img {
+  width: 100%; /* لجعل الصورة تأخذ عرض الحاوية */
+  height: 200px; /* تحديد ارتفاع ثابت لجميع الصور */
+  object-fit: cover; /* لضبط تناسب الصورة داخل الإطار */
+  border-radius: 10px; /* إضافة حواف مدورة (اختياري) */
+}
+
+
+.hexplore{
+  font-family: 'Poppins';
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-slider {
+  z-index: 2;
+  max-width: 1300px;
+padding-right: 50px;  
+}
+
+.news-slider__wrp {
+  display: flex;
+}
+
+.news-slider__item {
+  width: 400px;
+  transition: all .3s;
+}
+
+.news-slider__arrows button {
+  background: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 6px 26px 6px rgba(0,0,0,0.25);
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.news-slider-prev {
+  left: 15px;
+}
+
+.news-slider-next {
+  right: 15px;
+}

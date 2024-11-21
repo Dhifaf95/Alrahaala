@@ -1,0 +1,103 @@
+/* Header Container Styling */
+.header {
+    display: flex; /* استخدام Flexbox لتخطيط العناصر */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    height: 70px;
+    justify-content: space-between; /* توزيع العناصر بالتساوي */
+    background-color: #455F9E; /* لون الخلفية للشريط العلوي */
+    padding: 15px 20px; /* الحشوة الداخلية للشريط */
+    color: white; /* لون النص */
+    font-family: 'Poppins', sans-serif; /* نوع الخط */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف لإضفاء العمق */
+    position: relative; /* تحديد الموضع بالنسبة للعناصر الأخرى */
+    z-index: 1000; /* التأكد من أن الشريط العلوي يبقى فوق العناصر الأخرى */
+}
+.buttonD{
+    display: flex;
+    background-color:#455F9E ;
+}
+/* Logo Section */
+.logo {
+    display: flex; /* استخدام Flexbox لتخطيط عناصر الشعار */
+    align-items: center; /* محاذاة الشعار عموديًا في المنتصف */
+}
+
+.logo-img {
+    width: 4rem; /* عرض الشعار */
+    height: 4rem; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    flex-grow: 1; /* السماح لشريط الروابط بالنمو */
+    display: flex; /* استخدام Flexbox لتخطيط الروابط */
+    justify-content: center; /* مركزية العناصر الأفقية */
+    height: fit-content;
+ }
+
+.list {
+    list-style: none; /* إزالة النقاط من القائمة */
+    display: flex; /* استخدام Flexbox لتخطيط الروابط أفقيًا */
+    gap: 20px; /* مسافة بين الروابط */
+    padding: 0; /* إزالة الحشوة الافتراضية */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+}
+
+/* Styling for Navigation Links */
+.list li {
+    display: inline; /* عرض عناصر القائمة بشكل أفقي */
+}
+.nav-links a {
+    text-decoration: none; /* إزالة التزيين الافتراضي للنص */
+    color: white; /* لون النص للروابط */
+    font-size: 1.2 rem; /* حجم خط الروابط */
+    font-weight: 500; /* وزن الخط */
+    padding: 10px 20px; /* إضافة حشوة لجعل الروابط بشكل مستطيل */
+    border-radius: 5px; /* إضافة زوايا مدورة */
+    transition: color 0.3s ease-in-out; /* إضافة انتقال سلس لتغيير اللون */
+}
+
+/* إزالة الخلفية عند التحويم */
+.nav-links a:hover {
+    color: #0c265f; /* تغيير لون النص عند التحويم */
+    background-color: transparent; /* التأكد من عدم وجود لون خلفية */
+}
+
+
+/* Login Button Styling */
+.login-container .login-button {
+    background-color: white; /* لون الخلفية لزر تسجيل الدخول */
+    color: #0442c3; /* لون النص للزر */
+    border: none; /* إزالة الحدود الافتراضية */
+    padding: 10px 20px; /* الحشوة الداخلية للزر */
+    border-radius: 5px; /* إضافة زوايا مدورة */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+    font-weight: bold; /* جعل النص بالخط العريض */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* إضافة انتقال سلس لتغيير اللون والحجم */
+}
+
+/* Change button color on hover */
+.login-button:hover {
+    color: #0442c3; /* عكس لون النص عند التحويم */
+    transform: scale(1.1); /* تكبير الزر عند التحويم */
+}
+
+/* Responsive Design: Smaller screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* تغيير التخطيط ليكون عمودي على الشاشات الصغيرة */
+        padding: 10px; /* تقليل الحشوة */
+    }
+
+    .list {
+        flex-direction: column; /* جعل الروابط عمودية */
+        align-items: center; /* محاذاة الروابط في المنتصف */
+        gap: 10px; /* إضافة مسافة بين الروابط */
+    }
+
+    .login-container .login-button {
+        padding: 8px 16px; /* تقليل حشوة الزر في الشاشات الصغيرة */
+    }
+}
+
+

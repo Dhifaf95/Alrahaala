@@ -1,0 +1,10 @@
+.Zbackimg {
+    padding-top: 10px;
+    background-image: url('../imges/backimg1.png');
+    background-size: contain;      
+    background-position: center;  
+    height: 27rem;                 
+    width: 100%;                  
+    background-repeat: no-repeat;   
+     margin-bottom: 30px;
+}

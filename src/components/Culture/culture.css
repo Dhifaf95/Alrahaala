@@ -1,0 +1,91 @@
+.cardcontainer {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  background: #fff;
+  margin-top: 80px;
+  height: 450px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.Ano{
+  font-size: 50px ;
+text-align: left;
+color: #2C3562;
+}
+
+.cardslider{
+  text-decoration: none; 
+color: #fff;
+}
+.text-containe {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 81.125rem;
+  padding-top: 2.5625rem;
+  padding-bottom: 0;}
+
+.Hereare{
+  font-size: 22px;
+  color:black;
+  font-family: 'Poppins';
+  margin-bottom: 18px;
+}
+.card-wrapper {
+  display: flex; /* Arranges cards in a row */
+  gap: 40px; /* Adds space between each card */
+  
+}
+
+.incard {
+  position: relative;
+  box-sizing: border-box;
+  width: 340px;
+  height: 290px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: white;
+  overflow: hidden;
+  background-size: cover;
+  
+  background-position: center;
+}
+
+/* إضافة خلفية صورة مع تأثير الشفافية */
+.incard:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./imam.jpg');
+}
+.incard:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./histri.jpg');
+}
+.incard:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./natura.jpg');
+}
+.incard:nth-child(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./toys.jpg');
+}
+
+.incard:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.incard:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}

@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:rgba(4, 66, 195, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.mune{
+    align-items: center;
+   width:40%;
+}
+.muneul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    min-width: 350px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
