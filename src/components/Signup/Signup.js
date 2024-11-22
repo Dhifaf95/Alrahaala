@@ -29,7 +29,7 @@ const Signup = ({ closeSignUp }) => {
   
     try {
       const response = await axios.post(
-        '/signup/',
+        'signup/',
         {
           username: formData.username,
           email: formData.email,
