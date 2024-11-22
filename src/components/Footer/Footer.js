@@ -13,7 +13,7 @@ const Footer = React.memo(() => {
                 </div>
                 <div className="footer-links">
                     <div className="footer-column">
-                        <h4>Company</h4>
+                        <h4 className='h4css'>Company</h4>
                         <ul>
                             <li><a href="/about">About</a></li>
                             <li><a href="/careers">Careers</a></li>
@@ -21,7 +21,7 @@ const Footer = React.memo(() => {
                         </ul>
                     </div>
                     <div className="footer-column">
-                        <h4>Contact</h4>
+                        <h4 className='h4css'>Contact</h4>
                         <ul>
                             <li><a href="/help">Help/FAQ</a></li>
                             <li><a href="/press">Press</a></li>
@@ -29,7 +29,7 @@ const Footer = React.memo(() => {
                         </ul>
                     </div>
                     <div className="footer-column">
-                        <h4>More</h4>
+                        <h4 className='h4css'>More</h4>
                         <ul>
                             <li><a href="/airlinefees">Airline Fees</a></li>
                             <li><a href="/airline">Airline</a></li>
