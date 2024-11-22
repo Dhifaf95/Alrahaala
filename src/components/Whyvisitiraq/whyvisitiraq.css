@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 800px;
+    height: 750px;
     
   }
   /* .ancient-civilization-info1::after {
@@ -32,7 +32,7 @@ text-align: center;
     padding: 0;
     margin: 0;
     font: 700 60px/100px Poppins, sans-serif;
-    color:#2C3562;
+    color:#455f9e;
     letter-spacing: 0.025rem;
   }
   .ancient-civilization-info2 {
@@ -40,8 +40,8 @@ text-align: center;
     padding: 0;
     margin: 0;
     margin-top: 0;
-    font: 500 36px/45px Poppins, sans-serif;
-    color: white;
+    font: 500 36px/45px arial, sans-serif;
+    color: #000000;
     text-align: center;
     letter-spacing: 0.01125rem;
   }

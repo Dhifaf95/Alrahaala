@@ -59,7 +59,7 @@
   /* Info Bar */
   .info-bar {
     padding-right: 0;
-    background-color: #0442c3;
+    background-color: #455F9E;
     color: white;
     padding: 1rem 0;
     width: 100%;
@@ -97,7 +97,7 @@
   .intro-section h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #f36f38;
+    color: #E1C59D;
     margin-bottom: 1.5rem;
   }
   
@@ -127,7 +127,7 @@
   .features-list h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #f36f38;
+    color: #E1C59D;
     margin-bottom: 1rem;
   }
   
@@ -147,7 +147,7 @@
   .gallery-section h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #f36f38;
+    color: #E1C59D;
     margin-bottom: 1.5rem;
   }
   
@@ -178,7 +178,7 @@
   .gallery-item h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #f36f38;
+    color: #E1C59D;
   }
   
   .gallery-item p {
@@ -193,7 +193,7 @@
   .visitor-section h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #f36f38;
+    color: #E1C59D;
     margin-bottom: 1.5rem;
   }
   
@@ -219,7 +219,7 @@
   .info-card h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #f36f38;
+    color: #E1C59D;
     margin-bottom: 1rem;
   }
   
@@ -261,4 +261,3 @@
   .HistoricalDistric:hover {
     color: inherit; /* يحافظ على اللون الأصلي عند التحويم */
   }
-  

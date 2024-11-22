@@ -33,7 +33,7 @@
   margin: 10px 0 30px 0;
   font-size: 28px;
   font-weight: 800;
-  color: #0442c3;
+  color: #455F9E;
 }
 
 .form {
@@ -56,8 +56,8 @@
   text-decoration: underline;
   margin: 0;
   text-align: end;
-  color: #0442c3;
-  text-decoration-color: #0442c3;
+  color: #455F9E;
+  text-decoration-color: #455F9E;
   font-family: 'Poppins';
   font-weight: 800;
 }
@@ -79,7 +79,7 @@
   border-radius: 10px;
   border: 0 !important;
   outline: 0 !important;
-  background: #0442c3;
+  background: #455F9E;
   color: white;
   font-size: large;
   cursor: pointer;
@@ -100,8 +100,8 @@
   margin-left: 1px;
   font-size: 11px;
   text-decoration: underline;
-  text-decoration-color: #0442c3;
-  color: #0442c3;
+  text-decoration-color: #455F9E;
+  color: #455F9E;
   cursor: pointer;
   font-weight: 800;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -135,14 +135,14 @@
 }
 
 .apple-login-button {
-  background-color: #0442c3;
+  background-color: #455F9E;
   color: #fff;
-  border: 2px solid #0442c3;
+  border: 2px solid #455F9E;
 }
 
 .google-login-button {
-  border: 2px solid #0442c3;
-  background-color: #0442c3;
+  border: 2px solid #455F9E;
+  background-color: #455F9E;
 }
 
 .apple-icon,
@@ -182,4 +182,12 @@
   .buttons-container {
     gap: 10px;
   }
-}    
+}
+
+.app-container {
+  transition: background-color 0.3s ease;
+}
+
+.app-container.background-transparent {
+  background-color: rgba(0, 0, 0, 0.5); /* الشفافية */
+}

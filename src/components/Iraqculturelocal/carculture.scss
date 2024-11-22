@@ -75,15 +75,15 @@ $image-height: 600px;
       width: 0.75rem;
       height: 0.75rem;
       border-radius: 50%;
-      background-color: #0442c3;
+      background-color: #455F9E;
       transition: all 0.3s;
 
       &:hover {
-        background-color: #0442c3;
+        background-color: #455F9E;
       }
 
       &.active {
-        background-color: #2563eb;
+        background-color: #455F9E;
         width: 2rem;
       }
     }

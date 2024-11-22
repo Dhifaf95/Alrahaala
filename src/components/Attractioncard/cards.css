@@ -1,5 +1,5 @@
 
-  .card-container {
+  .card-containerwhy {
     width:100%; /* عرض كامل */
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -8,7 +8,7 @@
     margin: 0; /* تأكد من عدم وجود هوامش */
     padding: 0; /* تأكد من عدم وجود حشوات */
     height: auto;
-    gap: 30px;
+    gap: 40px;
 }
 
 
@@ -17,10 +17,10 @@
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   overflow: hidden; /* لإظهار الزوايا المستديرة على جميع الجوانب */
-  width: 400px;
+  width: 456px;
   margin: 10px;
   transition: transform 0.2s;
-  height: 556px;
+  height: 516px;
   margin-top: 30px;
   padding: 20px;
 }
@@ -52,10 +52,28 @@
     line-height: 1.5; /* Improved readability */
 text-align: justify;  }
   
-.buttonwhy{
-  margin-top: 10px;
-  font-family: 'Poppins';
+.buttonwhy {
+  font-family: 'Arial', sans-serif;
   border-radius: 10px;
-
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* إزالة الخط تحت النص */
+  border: none; /* إزالة الحدود حول الزر */
+  outline: none;
+  background-color: #455f9e; /* إزالة أي خطوط تميز الزر عند التركيز عليه */
 }
-  
+
+.buttonwhy:hover{
+  background-color: #E1C59D;
+}
+
+.testde {
+  text-decoration: none; /* إزالة الخط تحت النص داخل الرابط */
+}
+
+
+

@@ -8,3 +8,10 @@
     background-repeat: no-repeat;   
      margin-bottom: 30px;
 }
+.zainabSearchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    
+}

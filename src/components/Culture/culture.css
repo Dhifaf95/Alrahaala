@@ -6,15 +6,15 @@
   align-items: left;
   justify-content: flex-start;
   background: #fff;
-  margin-top: 80px;
+ 
   height: 450px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 36px;
+  padding-right: 36px;
 }
 .Ano{
   font-size: 50px ;
 text-align: left;
-color: #2C3562;
+color: #455F9E;
 }
 
 .cardslider{
@@ -39,7 +39,7 @@ color: #fff;
 }
 .card-wrapper {
   display: flex; /* Arranges cards in a row */
-  gap: 40px; /* Adds space between each card */
+  gap: 70px; /* Adds space between each card */
   
 }
 
@@ -50,7 +50,7 @@ color: #fff;
   height: 290px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 17px;
   text-align: center;
   cursor: pointer;
@@ -69,7 +69,7 @@ color: #fff;
 
 /* إضافة خلفية صورة مع تأثير الشفافية */
 .incard:nth-child(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./imam.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./pexels-samer-alhusseini-540227434-18766057.jpg');
 }
 .incard:nth-child(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./histri.jpg');

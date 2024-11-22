@@ -7,14 +7,17 @@
     background-color: #455F9E; /* لون الخلفية للشريط العلوي */
     padding: 15px 20px; /* الحشوة الداخلية للشريط */
     color: white; /* لون النص */
-    font-family: 'Poppins', sans-serif; /* نوع الخط */
+    font-family: arial; /* نوع الخط */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف لإضفاء العمق */
     position: relative; /* تحديد الموضع بالنسبة للعناصر الأخرى */
     z-index: 1000; /* التأكد من أن الشريط العلوي يبقى فوق العناصر الأخرى */
+font-weight: bold;
 }
 .buttonD{
     display: flex;
     background-color:#455F9E ;
+    font-weight: bold;
+    font-family: Arial;
 }
 /* Logo Section */
 .logo {
@@ -23,7 +26,7 @@
 }
 
 .logo-img {
-    width: 4rem; /* عرض الشعار */
+    width: 6rem; /* عرض الشعار */
     height: 4rem; /* الحفاظ على نسبة العرض إلى الارتفاع */
 }
 
@@ -51,10 +54,12 @@
     text-decoration: none; /* إزالة التزيين الافتراضي للنص */
     color: white; /* لون النص للروابط */
     font-size: 1.2 rem; /* حجم خط الروابط */
-    font-weight: 500; /* وزن الخط */
+    font-weight: bold; /* وزن الخط */
     padding: 10px 20px; /* إضافة حشوة لجعل الروابط بشكل مستطيل */
     border-radius: 5px; /* إضافة زوايا مدورة */
     transition: color 0.3s ease-in-out; /* إضافة انتقال سلس لتغيير اللون */
+    font-family: arial;
+
 }
 
 /* إزالة الخلفية عند التحويم */
@@ -67,7 +72,7 @@
 /* Login Button Styling */
 .login-container .login-button {
     background-color: white; /* لون الخلفية لزر تسجيل الدخول */
-    color: #0442c3; /* لون النص للزر */
+    color: #455F9E; /* لون النص للزر */
     border: none; /* إزالة الحدود الافتراضية */
     padding: 10px 20px; /* الحشوة الداخلية للزر */
     border-radius: 5px; /* إضافة زوايا مدورة */
@@ -78,7 +83,7 @@
 
 /* Change button color on hover */
 .login-button:hover {
-    color: #0442c3; /* عكس لون النص عند التحويم */
+    color: #455F9E; /* عكس لون النص عند التحويم */
     transform: scale(1.1); /* تكبير الزر عند التحويم */
 }
 
@@ -95,9 +100,7 @@
         gap: 10px; /* إضافة مسافة بين الروابط */
     }
 
-    .login-container .login-button {
+    .login-containerd .login-button {
         padding: 8px 16px; /* تقليل حشوة الزر في الشاشات الصغيرة */
     }
 }
-
-

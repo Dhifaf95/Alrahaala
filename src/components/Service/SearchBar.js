@@ -13,6 +13,28 @@ const BookingSearch = ({ onSubmit }) => {
   const [guests, setGuests] = useState(1);
   const navigate = useNavigate(); // Hook for navigation
 
+  const locationOptions = {
+    "Religious Landmarks": [
+      "The Imam Ali Shrine in Najaf",
+      "The Great Mosque of Samarra",
+      "The Shrines of Imam Hussein and Imam Abbas in Karbala",
+    ],
+    "Historical and Archaeological Sites": [
+      "The Hanging Gardens of Babylon",
+      "The Ziggurat of Ur",
+      "The Abbasid Palace in Baghdad",
+    ],
+    "Touristic Locations": [
+      "The riverfronts along the Tigris River in Baghdad",
+      "The Korek Mountains",
+      "The ancient Erbil Citadel",
+    ],
+    "Adventure Spots": [
+      "Mountain climbing in the Hamrin Mountains",
+      "Zakros Amusement Park in Sulaymaniyah",
+      "Camping in the Qandil Mountains",
+    ],
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -32,6 +54,16 @@ const BookingSearch = ({ onSubmit }) => {
       navigate('/login'); // مسار صفحة تسجيل الدخول
     }
   };
+  const handleLocationChange = (e) => {
+    const selectedLocation = e.target.value;
+    setLocation(selectedLocation);
+
+    // Adjust the date selection based on the location
+    // Example: Set default dates for certain categories if needed
+    if (selectedLocation === "The Shrines of Imam Hussein and Imam Abbas in Karbala") {
+      setDates([new Date(), new Date(new Date().setDate(new Date().getDate() + 1))]); // Example: set a default range
+    }
+  };
 
   return (
     <div className="booking-container">
@@ -39,13 +71,23 @@ const BookingSearch = ({ onSubmit }) => {
         <div className="form-group">
           <div className="input-icon">
             <FaMapMarkerAlt size={20} color="#aaa" />
-            <input
-              type="text"
+            <select
+            className='seld'
               id="location"
-              placeholder="Where to?"
               value={location}
-              onChange={(e) => setLocation(e.target.value)}
-            />
+              onChange={handleLocationChange}
+            >
+              <option value="">Where to?</option>
+              {Object.keys(locationOptions).map((category) => (
+                <optgroup label={category} key={category}>
+                  {locationOptions[category].map((place, index) => (
+                    <option key={index} value={place}>
+                      {place}
+                    </option>
+                  ))}
+                </optgroup>
+              ))}
+            </select>
           </div>
         </div>
         <div className="form-group">
@@ -83,7 +125,7 @@ const BookingSearch = ({ onSubmit }) => {
           </div>
         </div>
 
-        <button type="submit" className="submit-btn">
+        <button type="submit" className="submit-btnnh">
           Company Booking
         </button>
       </form>

@@ -28,16 +28,17 @@ const Cards = () => {
   ];
 
   return (
-    <div className="card-container">
+    <div className="card-containerwhy">
       {cards.map((card, index) => (
         <div className="cardqq" key={index}>
           <img src={card.imgSrc} alt={card.title} className="card__image" />
           <div className="card__content">
             <p className="card__title">{card.title}</p>
             <p className="card__description">{card.description}</p>
-            <a href={card.videoLink} target="_blank" rel="noopener noreferrer">
-              <Button label="Learn more" width='142px' height='40px' className="buttonwhy" fontSize='20px'/>
-            </a>
+            <a href={card.videoLink} target="_blank" rel="noopener noreferrer"  className='testde'>
+  <Button label="Learn more" width='140px' height='40px' className="buttonwhy" fontSize='20px'/>
+</a>
+
           </div>
         </div>
       ))}

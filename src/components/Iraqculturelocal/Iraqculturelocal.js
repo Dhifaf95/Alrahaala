@@ -5,7 +5,6 @@ import './iraqculturelocal.css';
 import video12 from './iraqiculure.mp4';
 import clothes1 from './clothes4.jpg'
 import clothes2 from './clothes5.jpg'
-import clothes3 from './clothes.1.jpg'
 import clothes4 from './clothes.2.jpg'
 import clothes5 from './clothes.3.jpg'
 import Carculture from './Carculture';
@@ -47,9 +46,6 @@ const Iraqculturelocal = () => {
     },
     {
       src:clothes2,
-    },
-    {
-      src:clothes3,
     },
     {
       src:clothes4,

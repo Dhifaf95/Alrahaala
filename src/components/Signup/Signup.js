@@ -19,31 +19,34 @@ const Signup = ({ closeSignUp }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Check if passwords match
+  
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match!');
       return;
     }
-
+  
     try {
-        const response = await axios.post('/signup/', {
-            username: formData.username,
-            email: formData.email,
-            password: formData.password,
-            password2: formData.confirmPassword,
-          }, {
-            headers: {
-              'X-CSRFTOKEN': 'your_csrf_token_here',
-            },
-          });
-          
-
+      const response = await axios.post(
+        '/signup/',
+        {
+          username: formData.username,
+          email: formData.email,
+          password: formData.password,
+          password2: formData.confirmPassword,
+        },
+        {
+          headers: {
+            'X-CSRFTOKEN': 'your_csrf_token_here',
+          },
+        }
+      );
+  
       if (response.status === 201) {
-        // If successful, navigate to the companies page
+        // تخزين اسم المستخدم في localStorage
+        localStorage.setItem('username', formData.username);
+        // الانتقال إلى صفحة الشركات
         navigate('/ZainabHom');
       }
     } catch (error) {
@@ -54,6 +57,7 @@ const Signup = ({ closeSignUp }) => {
       }
     }
   };
+  
 
   return (
     <div className="signup-overlay">

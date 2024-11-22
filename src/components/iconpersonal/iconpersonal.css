@@ -1,47 +1,46 @@
 /* General Styling for the Iconpersonal component */
 .iconpersonal-toggle {
-    display: flex;
-    align-items: center;
-    border: none; /* Remove border */
-    background: transparent; /* Remove background */
-    color: #FFFFFF; /* Set icon and text color */
-    font-size: 16px; /* Set font size for the username */
-    font-weight: 500; /* Slightly bold text */
-    padding: 0; /* Remove padding */
-    cursor: pointer; /* Pointer cursor for better UX */
-    text-decoration: none; /* No underline */
+  display: flex;
+  align-items: center;
+  border: none; /* Remove border */
+  background: transparent; /* Remove background */
+  color: #FFFFFF; /* Set icon and text color */
+  font-size: 16px; /* Set font size for the username */
+  font-weight: 500; /* Slightly bold text */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Pointer cursor for better UX */
+  text-decoration: none; /* No underline */
 
 
-  }
-  
-  .iconpersonal-icon {
-    margin-right: 8px; /* Space between icon and username */
-  }
-  
-  .iconpersonal-username {
-    font-family: 'Poppins', sans-serif;
-    margin-right: 5px; /* Space between username and dropdown arrow */
+}
 
-  }
-  
-  #dropdown-split-basic::after {
-    content: ''; /* Default Bootstrap arrow remains */
-    margin-left: 5px; /* Space between username and arrow */
-  }
-  
-  .dropdown-menu {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-  }
-  
-  .dropdown-menu a {
-    color: #0442C3; /* Text color for menu items */
-    text-decoration: none; /* No underline */
-    padding: 10px 15px; /* Add padding to menu items */
-  }
-  
-  .dropdown-menu a:hover {
-    background-color: #f0f0f0; /* Light gray background on hover */
-    color: #0442c3; /* Change text color on hover */
-  }
-  
+.iconpersonal-icon {
+  margin-right: 8px; /* Space between icon and username */
+}
+
+.iconpersonal-username {
+  font-family: 'Poppins', sans-serif;
+  margin-right: 5px; /* Space between username and dropdown arrow */
+
+}
+
+#dropdown-split-basic::after {
+  content: ''; /* Default Bootstrap arrow remains */
+  margin-left: 5px; /* Space between username and arrow */
+}
+
+.dropdown-menu {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.dropdown-menu a {
+  color: #455F9E; /* Text color for menu items */
+  text-decoration: none; /* No underline */
+  padding: 10px 15px; /* Add padding to menu items */
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #455F9E; /* Change text color on hover */
+}

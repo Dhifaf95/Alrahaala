@@ -14,7 +14,7 @@
     flex-direction: column;
     height: 80vh;
     background-color: #fff;
-    color: #0442c3;
+    color: #455F9E;
     padding: 0px;
     margin-top: 0px;
   }
@@ -26,7 +26,8 @@
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     color: #042e88;
-    font-family:'Poppins' ;
+    font-family:'arial' ;
+    font-weight: bold;
   }
   
   .video-containerculture {
@@ -56,7 +57,7 @@
   background-color: #fff;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   position: absolute;
-  top: 300px; /* يوضع في أعلى الفيديو */
+  top: 250px; /* يوضع في أعلى الفيديو */
   right: 70px; /* يوضع على يمين الفيديو */
   display: flex;
   align-items: center;
@@ -84,7 +85,7 @@
   } */
 
   .Discoverwaem{
-    font-family: 'Poppins';
+    font-family: arial;
     text-align: left;
     padding-left:6rem ;
     color: #000000;
@@ -104,7 +105,7 @@
     --main-color--active-2: #006699;
     --main-color--active: #004565;
     --greyscale: #505050;
-    --site-font-family: 'Dubai', 'Arial', sans-serif;
+    --site-font-family:  'Arial';
 }
 
 .droplist {
@@ -119,24 +120,24 @@ padding-left: 4rem;
     font-size: 1.125rem;
 }
 
-.droplist__li {
+.droplistli {
     display: block;
 }
 
-.droplist__a {
+.droplista {
     text-decoration: none;
     color: #050505;
     padding: 10px;
     padding-left: 0px;
     display: flex;
     align-items: center;
-gap: 20px;
-font-family: 'Poppins';
+gap: 30px;
+font-family: arial;
 
 }
 
 .droplist__a:hover {
-    color: #0442c3;
+    color: #455F9E;
 }
 
 .icon {
@@ -145,7 +146,7 @@ font-family: 'Poppins';
 }
 
 .jump{
-  font-family: 'Poppins';
+  font-family: arial;
   text-align: left;
   padding-left:4rem ;
   color: #000000;
@@ -158,8 +159,8 @@ font-family: 'Poppins';
   padding-left: 4rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  font-family: 'Poppins';
-  color: #0442c3;
+  font-family: 'arial';
+  color: #455F9E;
 }
 
 .abaya{
@@ -217,9 +218,9 @@ font-family: 'Poppins';
     height: 150px;
     resize: vertical;
   }
-  
+
   .contact-formculture .btnculture {
-    background-color: #0442c3;
+    background-color: #455F9E;
     color: white;
     padding: 0.5rem 1.5rem;
     font-size: 1rem;

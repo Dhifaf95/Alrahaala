@@ -6,10 +6,10 @@
 
 .wrapper11 {
   position: relative;
-  background: linear-gradient(to bottom, #0442c3 0%, #c1c6d8 100%);
+  background: linear-gradient(to bottom, #455F9E 0%, #c1c6d8 100%);
 
 }
-.news__img img {
+.newsimg img {
   width: 100%; /* لجعل الصورة تأخذ عرض الحاوية */
   height: 200px; /* تحديد ارتفاع ثابت لجميع الصور */
   object-fit: cover; /* لضبط تناسب الصورة داخل الإطار */
@@ -38,16 +38,16 @@
 padding-right: 50px;  
 }
 
-.news-slider__wrp {
+.news-sliderwrp {
   display: flex;
 }
 
-.news-slider__item {
+.news-slideritem {
   width: 400px;
   transition: all .3s;
 }
 
-.news-slider__arrows button {
+.news-sliderarrows button {
   background: #fff;
   border-radius: 50%;
   width: 50px;

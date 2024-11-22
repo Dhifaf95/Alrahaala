@@ -11,8 +11,7 @@ const Button = ({
 }) => {
   return (
     <div
-      className={`butt ${className}`}
-      style={{ width, fontSize, height }}
+      
     >
       <button
         type="submit"
