@@ -99,6 +99,10 @@ const Signup = ({ closeSignUp }) => {
   return (
     <div className="signup-overlay">
       <div className="form-container-signup">
+      <button className="close-buttons" onClick={closeSignUp}>
+          &times;
+        </button>
+
         <p className="title-signup">Create an Account</p>
         <form className="form-signup" onSubmit={handleSubmit}>
           <input

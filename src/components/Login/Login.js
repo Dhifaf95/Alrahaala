@@ -3,8 +3,7 @@ import axios from 'axios';
 import './Login.css';
 import Signup from '../Signup/Signup';
 
-
-const Login = () => {
+const Login = ({ onClose, onLoginSuccess }) => {
   const [showSignUp, setShowSignUp] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -23,12 +22,11 @@ const Login = () => {
       });
 
       if (response.status === 200) {
-        // إذا كانت الاستجابة 200، يتم التوجيه إلى صفحة الشركات
         window.location.href = '/';
-        localStorage.setItem('username', username); // مسار صفحة الشركات
+        localStorage.setItem('username', username);
+        onLoginSuccess(); 
       }
     } catch (error) {
-      // عرض رسالة خطأ إذا فشل تسجيل الدخول
       setErrorMessage('Invalid username or password. Please try again.');
     }
   };
@@ -40,6 +38,8 @@ const Login = () => {
       ) : (
         <div className="login-overlay">
           <div className="logform-container">
+            {/* زر الإغلاق */}
+            <button className="close-button" onClick={onClose}>&times;</button>
             <p className="title">Welcome back</p>
             <form className="form" onSubmit={handleLogin}>
               <input

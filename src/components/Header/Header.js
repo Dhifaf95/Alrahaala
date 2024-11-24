@@ -5,16 +5,21 @@ import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import logo from './Untitled_logo_1_free-file__4_-removebg-preview.png';
 import Button from '../Button/Button';
-import Login from '../Login/Login'; // مكون نموذج تسجيل الدخول
-import profileIcon from './profile-icon.png'; // صورة أيقونة البروفايل
+import Login from '../Login/Login';
+import profileIcon from './profile-icon.png';
 
 const Header = () => {
-    const [isLoginVisible, setLoginVisible] = useState(false); // إدارة ظهور مكون تسجيل الدخول
-    const [isLoggedIn, setLoggedIn] = useState(false); // إدارة حالة تسجيل الدخول
+    const [isLoginVisible, setLoginVisible] = useState(false);
+    const [isLoggedIn, setLoggedIn] = useState(false);
 
     const handleLoginSuccess = () => {
-        setLoggedIn(true); // عند تسجيل الدخول بنجاح، حدث الحالة
-        setLoginVisible(false); // إخفاء مكون تسجيل الدخول
+        setLoggedIn(true);
+        setLoginVisible(false);
+    };
+
+    // دالة إغلاق نافذة تسجيل الدخول
+    const handleCloseLogin = () => {
+        setLoginVisible(false);
     };
 
     return (
@@ -35,7 +40,7 @@ const Header = () => {
             <div className="login-containerd">
                 {!isLoggedIn ? (
                     <Button
-                        onClick={() => setLoginVisible(true)} // عرض نموذج تسجيل الدخول
+                        onClick={() => setLoginVisible(true)}
                         label="Login"
                         width="100px"
                         height="40px"
@@ -53,7 +58,10 @@ const Header = () => {
 
             {isLoginVisible && (
                 <div className="login-modal">
-                    <Login onLoginSuccess={handleLoginSuccess} />
+                    <Login 
+                        onClose={handleCloseLogin}
+                        onLoginSuccess={handleLoginSuccess}
+                    />
                 </div>
             )}
         </header>
