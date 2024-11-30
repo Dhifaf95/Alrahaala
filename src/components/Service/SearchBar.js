@@ -62,7 +62,6 @@ const BookingSearch = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (isLoggedIn) {
-            navigate('/ZainabHom');
         } else {
             setLoginVisible(true);
         }
