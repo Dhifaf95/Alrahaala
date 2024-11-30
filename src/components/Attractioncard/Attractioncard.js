@@ -7,7 +7,7 @@ import Descripesite from "./Descripesite";
 
  function Attractioncard () {
   return (
-    <div className="atd" >
+    <div  className="atd" >
         <Titlepage/>
         <Descripesite/>
         <Cards/>

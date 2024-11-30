@@ -54,7 +54,7 @@ const About = () => {
   };
 
   return (
-    <div className="about-section">
+    <div id="About" className="about-section">
       {/* Features Grid */}
       <div className="features-grid">
         <div className="feature-card">

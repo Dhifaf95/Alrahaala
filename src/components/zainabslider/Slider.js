@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import Header from "../Header/Header";
 import "./zSlider.css";
+import Footer from "../Footer/Footer";
 
 function Slider() {
   const slides = [
@@ -72,6 +74,7 @@ function Slider() {
 
   return (
     <div className="slider" ref={sliderRef}>
+      <Header/>
       <div
         className="slides"
         style={{
@@ -113,6 +116,7 @@ function Slider() {
           ❯
         </button>
       </div>
+      <Footer/>
     </div>
   );
 }

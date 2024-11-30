@@ -55,7 +55,7 @@
   border: 0 !important;
   outline: 0 !important;
   background: #455F9E;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: large;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -97,3 +97,14 @@
 .close-buttons:hover {
   color: #ff0000;
 }
+
+.error-messagesi{
+  color: red;
+  text-align: center;
+}
+.general-error-messagesi{
+  color: red;
+  text-align: center;
+
+}
+

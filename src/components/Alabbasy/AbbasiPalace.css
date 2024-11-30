@@ -3,15 +3,21 @@
 *{
   padding: 0;
   margin: 0;
-}
-.palace-container {
-    min-height: 100vh;
-    background-color: #ffffff;
   }
+  
+
+.palace-container {
+  min-height: 100vh; /* يجعل ارتفاع الحاوية على الأقل بارتفاع الشاشة */
+  width: 100%; /* يضمن أن الحاوية تغطي عرض الشاشة بالكامل */
+  background-color: #ffffff; /* اللون الخلفي */
+  position: relative; /* يتيح للأبناء المطلقة الموضع التحديد نسبة إلى هذه الحاوية */
+  overflow: hidden; /* إذا كان هناك محتوى زائد، يخفيه */
+}
+
   
   .hero-section {
     position: relative;
-    width: 1540px;
+    width: 1577px;
     height: 628px;
     overflow: hidden;
     margin: 0; /* تأكد من عدم وجود مسافات خارجية */
@@ -28,17 +34,20 @@
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
+  position: absolute; /* لتغطية الحاوية بالكامل */
+  inset: 0; /* اختصار لـ top: 0; right: 0; bottom: 0; left: 0; */
+  display: flex; /* لمحاذاة المحتوى في المنتصف */
   align-items: center;
   justify-content: center;
-  background-image: url('./AbbasiPalacemain_1304x500.webp'); /* ضع مسار الصورة هنا */
-  background-size: cover; /* يغطي الصورة بحيث تملأ الخلفية */
-  background-position: center; /* يجعل الصورة في منتصف الخلفية */
+  background-image: url('./AbbasiPalacemain_1304x500.webp'); /* ضع مسار الصورة */
+  background-size: cover; /* تغطي كامل العنصر */
+  background-position: center; /* تتمركز الصورة */
+  background-repeat: no-repeat; /* يمنع التكرار */
   color: white;
-  border-radius: 0%;
+  width: 100%;
+
 }
+
 
 
 .hero-content {
@@ -62,7 +71,7 @@
     background-color: #455F9E;
     color: white;
     padding: 1rem 0;
-    width: 100%;
+    width:1577px ;
     margin: 0; /* إزالة أي هوامش محتملة */
 }
   .info-container {
@@ -124,11 +133,14 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+
   .features-list h3 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #E1C59D;
     margin-bottom: 1rem;
+    margin-top: 4rem;
+
   }
   
   .features-list ul {

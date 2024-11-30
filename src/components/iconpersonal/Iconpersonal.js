@@ -5,7 +5,7 @@ import { FaUserCircle } from 'react-icons/fa'; // Importing user icon
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './iconpersonal.css';
 
-function Iconpersonal({ username }) {
+function Iconpersonal({ username, onLogout }) {
   return (
     <Dropdown as={ButtonGroup}>
       <Dropdown.Toggle
@@ -19,7 +19,7 @@ function Iconpersonal({ username }) {
 
       <Dropdown.Menu>
         <Dropdown.Item href="#/profile">Profile</Dropdown.Item>
-        <Dropdown.Item href="#/logout">Logout</Dropdown.Item>
+        <Dropdown.Item onClick={onLogout}>Logout</Dropdown.Item> {/* Logout option */}
       </Dropdown.Menu>
     </Dropdown>
   );

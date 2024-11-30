@@ -14,6 +14,7 @@ const Signup = ({ closeSignUp }) => {
   const [generalError, setGeneralError] = useState('');
   const navigate = useNavigate(); // To navigate to the companies page
 
+
   // Handle input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -114,7 +115,7 @@ const Signup = ({ closeSignUp }) => {
             onChange={handleInputChange}
             required
           />
-          {errors.username && <p className="error-message">{errors.username}</p>}
+          {errors.username && <p className="error-messagesi">{errors.username}</p>}
 
           <input
             type="email"
@@ -125,7 +126,7 @@ const Signup = ({ closeSignUp }) => {
             onChange={handleInputChange}
             required
           />
-          {errors.email && <p className="error-message">{errors.email}</p>}
+          {errors.email && <p className="error-messagesi">{errors.email}</p>}
 
           <input
             type="password"
@@ -136,7 +137,7 @@ const Signup = ({ closeSignUp }) => {
             onChange={handleInputChange}
             required
           />
-          {errors.password && <p className="error-message">{errors.password}</p>}
+          {errors.password && <p className="error-messagesi">{errors.password}</p>}
 
           <input
             type="password"
@@ -147,14 +148,14 @@ const Signup = ({ closeSignUp }) => {
             onChange={handleInputChange}
             required
           />
-          {errors.confirmPassword && <p className="error-message">{errors.confirmPassword}</p>}
+          {errors.confirmPassword && <p className="error-messagesi">{errors.confirmPassword}</p>}
 
           <button className="form-btn-signup" type="submit">
             Sign Up
           </button>
         </form>
 
-        {generalError && <p className="general-error-message">{generalError}</p>}
+        {generalError && <p className="general-error-messagesi">{generalError}</p>}
 
         <p className="login-label">
           Already have an account?{' '}

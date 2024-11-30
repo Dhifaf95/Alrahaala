@@ -41,7 +41,7 @@ const Card = () => {
       duration: "3 days",
       departureDates: "March, October",
       price: "$550",
-      includes: "Guide, Transport, Accommodation",
+      includes: "Guide, Transport",
     },
   ];
   

@@ -104,3 +104,7 @@ font-weight: bold;
         padding: 8px 16px; /* تقليل حشوة الزر في الشاشات الصغيرة */
     }
 }
+
+.profile-icon{
+    width: 2rem;
+}

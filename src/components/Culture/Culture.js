@@ -1,10 +1,10 @@
 import React from 'react';
 import './culture.css';
 
-const Culture = () => {
+const Attractions = () => {
   return (
-    <div className='cardcontainer'>
-      <div className='text-container'>
+<div id="Attractions" className='cardcontainer'>
+<div className='text-container'>
         <h2 className='Ano'>Attraction</h2>
         <p className='Hereare'>
           Here are lots of interesting destinations to visit, but don’t be confused—they’re already grouped by category.
@@ -22,4 +22,4 @@ const Culture = () => {
   );
 }
 
-export default Culture;
+export default Attractions;

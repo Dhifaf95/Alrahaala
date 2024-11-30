@@ -28,14 +28,21 @@ padding-bottom: 45px;
 
  .sliderbtn{
   border-radius: 10px;
-  border-color: #ffffff;
   margin-left: 20px;
-  width: fit-content;
+  width: 130px;
   padding-right: 5px;
   padding-left: 5px;
   position: absolute;
+  background-color: #455F9E;
+  color: #ffffff;
+  border: none;
+  height: 40px;
 
 
+ }
+
+ .sliderbtn:hover{
+background-color: #E1C59D;
  }
 .slider-text {
   position: absolute;

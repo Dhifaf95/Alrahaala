@@ -5,10 +5,14 @@ import image1 from './wallabbasy.jpg';
 import image2 from './gardabbay.jpg';
 import image3 from './archabbay.jpg';
 import image4 from './tafaabby.jpg';
+import Header from '../Header/Header';
+import Footer  from '../Footer/Footer';
 
 const AbbasiPalace = () => {
   return (
+
     <div className="palace-container">
+      <Header/>
       {/* Hero Section */}
       <div className="hero-section">
         <div className="hero-overlay">
@@ -142,6 +146,7 @@ const AbbasiPalace = () => {
           </div>
         </section>
       </div>
+      <Footer/>
     </div>
   );
 };
